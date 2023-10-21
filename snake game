@@ -1,0 +1,63 @@
+from turtle import Turtle,Screen
+from Yilan import Yilan
+import time
+from yem import Yem
+from skor_tablosu import SkorTablosu
+from Yilan2 import Yilan2
+from skor_tablosu2 import SkoyTablosu
+from yem2 import Yem2
+screen=Screen()
+screen.setup(width=700,height=700)
+screen.bgcolor("Purple")
+screen.tracer(0)
+screen.title("Yılan Oyunu")
+
+screen.listen()
+yilan=Yilan()
+yem=Yem()
+skor2=SkoyTablosu()
+yilan2=Yilan2()
+yem2=Yem2()
+skor_tablosu=SkorTablosu()
+screen.onkey(yilan.up,"Up")
+screen.onkey(yilan.down,"Down")
+screen.onkey(yilan.left,"Left")
+screen.onkey(yilan.right,"Right")
+screen.onkey(yilan2.up,"w")
+screen.onkey(yilan2.down,"s")
+screen.onkey(yilan2.left,"a")
+screen.onkey(yilan2.right,"d")
+oyun=True
+while oyun:
+    screen.tracer(0)
+    screen.update()
+    time.sleep(0.08)
+    yilan.hareket_et()
+    yilan2.hareket_et()
+    if yilan.bas.xcor()>345 or yilan.bas.xcor()<-345 or yilan.bas.ycor()>345 or yilan.bas.ycor()<-345 or yilan2.bas.xcor()>345 or yilan2.bas.xcor()<-345 or yilan2.bas.ycor()>345 or yilan2.bas.ycor()<-345:
+        oyun=False
+        skor_tablosu.oyun_bitti()
+    if yilan.bas.distance(yem)<15:
+        yem.yenile()
+        yem2.yenile()
+        yilan.buyut()
+        skor_tablosu.skor_arttir()
+
+    if yilan2.bas.distance(yem)<15:
+        yem.yenile()
+        yem2.yenile()
+        yilan2.buyut()
+        skor2.skor_arttir()
+    if yilan2.bas.distance(yem2)<15:
+        yem.yenile()
+        yem2.yenile()
+        yilan2.buyut()
+        skor2.skor_arttir()
+    if yilan.bas.distance(yem2)<15:
+        yem.yenile()
+        yem2.yenile()
+        yilan2.buyut()
+        skor2.skor_arttir()
+    if yilan.bas.distance(yilan2.bas)<15:
+        oyun=False
+
