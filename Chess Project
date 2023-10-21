@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>chess project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2 style="margin-bottom: -20px; padding-top: 5px;">Chess</h1>
+      <h4>for everybody</h4>
+    </header>
+    <nav>
+      <a href="#">Anasayfa</a><a href="https://lichess.org/"target="_blank">Oyna</a><a href="#">Turnuvalar</a><a href="#">Bilgi</a>
+    </nav>
+    <main>
+      <h1 style="padding-top: 50px;">let's chess</h1>
+      <p>
+        To make a move, a player chooses one of their pieces on the board, and moves it from its current square to another square. The square it moves to must either be empty, or contain a piece belonging to their opponent.
+If the square contains an opponent’s piece, then that piece is removed from the board and placed off to the side.
+      </p>
+    </main>
+    <footer>
+      <p>Think Simple and Effective,Then Wait For Success</p>
+    </footer>
+  </div>
+</body>
+</html>
+,
+body{
+background-image: url(/images/back.jpg);
+background-size:cover ;
+background-repeat: no-repeat;
+background-position: center;
+}
+.container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 550px;
+        
+}
+header{
+        height: 80px;
+        text-align: center;
+        font-family: 'UnifrakturCook', cursive;
+        color: aqua;
+
+}
+nav{
+        background-color: rgba(0, 0, 0, 0.247);
+        height: 40px;
+        padding-top: 20px;
+        text-align: center;
+}
+main{
+        height: 310px;
+        text-align: center;
+        padding-top: 30px; ;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+        background-color: rgb(0, 0, 0, 0.247);
+        height: 60px;
+        color: aliceblue;
+        text-align: center;
+        padding-top: 7px;
+}
+h1{
+        font-size: 60px;
+}
+p{
+        font-size: 16px;
+}
+nav a{
+        color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+}
+footer p{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+}
