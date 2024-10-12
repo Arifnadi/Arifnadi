@@ -1,10 +1,5 @@
-- 👋 Hi, I’m @Arifnadi
-- 👀 I’m interested in Python
-- 🌱 I’m currently learning java
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-Arifnadi/Arifnadi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- Ben arif nadi Youtube kanalımda içerik üretmeye çalışıyorum genellikle animasyon
+- 👀 görünüleme 9k falan
+- 🌱 benim umrumda olanlar çoğunlukla goruntuleme ve kitleyi elde tutmak için veriler
+- 💞️ ayrıca animasyonlar dışında blox fruits videoları da çekmeye calisiyorum
+- 📫 Kullandığım uygulamalar abobe madobe falan
